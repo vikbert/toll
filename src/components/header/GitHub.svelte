@@ -1,11 +1,6 @@
 <script lang="ts">
     import type GithubInfo from "../../types/GithubInfo";
 
-    type GithubInfo = {
-        author: string,
-        project: string,
-    };
-
     export let info: GithubInfo;
     export let width = 30;
 </script>
