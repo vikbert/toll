@@ -1,3 +1,3 @@
 <div class="container">
-  <h1>init page</h1>
+  <span>init page</span>
 </div>

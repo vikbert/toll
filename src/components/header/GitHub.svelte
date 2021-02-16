@@ -1,5 +1,6 @@
 <script lang="ts">
     import type GithubInfo from "../../types/GithubInfo";
+
     type GithubInfo = {
         author: string,
         project: string,

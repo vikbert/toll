@@ -1,17 +1,18 @@
 <script lang="ts">
     import Footer from '$components/footer/Footer.svelte';
+    import GitHub from '../components/header/GitHub.svelte';
+    import type GithubInfo from "../types/GithubInfo";
+
+    const info: GithubInfo = {author: 'vikbert', project: 'toll'};
 </script>
 
 <header class="header">
     <nav class="topbar">
         <div class="container space-between">
-            <div class="log">logo</div>
-            <div class="nav">
-                <div>
-                    <a href="/">index</a>
-                    <a href="/about">about</a>
-                </div>
+            <div class="log">
+                <img src="logo.png" alt="toll" width="60"/>
             </div>
+            <GitHub {info}/>
         </div>
     </nav>
 </header>
@@ -20,11 +21,11 @@
     <slot/>
 </main>
 
-<Footer info={{author: 'vikbert', project: 'toll'}}/>
+<Footer {info}/>
 
 <svelte:head>
     <style>
-      body {
+      body, .topbar {
         background-color: white;
       }
     </style>

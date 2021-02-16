@@ -30,6 +30,7 @@
 <style>
   .footer {
     padding: 0 0 5rem 0;
+    background-color: #1c0226;
   }
 
   .container {
