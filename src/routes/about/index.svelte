@@ -1,3 +1,3 @@
 <div class="container">
-  <span>init page</span>
+  <span>about page</span>
 </div>
