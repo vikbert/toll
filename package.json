@@ -7,7 +7,6 @@
 		"start": "svelte-kit start"
 	},
 	"devDependencies": {
-		"@pixss/svelte": "^1.2.2",
 		"@snowpack/plugin-typescript": "^1.0.0",
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/kit": "next",
