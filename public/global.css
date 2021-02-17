@@ -1,0 +1,9 @@
+h1, h2 {
+  font-size: 6vw;
+}
+@media screen and (min-width: 550px) {
+  h1,
+  h2 {
+    font-size: 3rem;
+  }
+}

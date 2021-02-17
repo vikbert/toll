@@ -27,7 +27,7 @@
                 />
             </a>
         </div>
-        <div class="techniques">
+        <div class="techniques hide-mobile">
             <a href="https://vikbert.github.io/pixss/">
                 <img
                     src="https://raw.githubusercontent.com/vikbert/vikbert.github.io/master/pixss.png"
