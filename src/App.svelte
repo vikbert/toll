@@ -35,7 +35,6 @@
 <style>
   .logo {
     pointer-events: none;
-    margin: 3rem;
     animation: App-logo-spin infinite 1.6s ease-in-out alternate;
   }
   @keyframes App-logo-spin {
