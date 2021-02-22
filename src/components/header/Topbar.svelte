@@ -12,17 +12,20 @@
   };
 </script>
 
-<nav class="topbar">
-  <div class="container space-between">
-    <div class="burger" class:open on:click={toggleMenu}>
-      <span /><span /><span />
-    </div>
-    <img src="logo.png" class="logo" alt="logo" width="50" />
-    <slot />
+<nav class="topbar space-between px-1">
+  <div class="burger" class:open on:click={toggleMenu}>
+    <span />
+    <span />
+    <span />
   </div>
+  <img src="logo.png" class="logo" alt="logo" width="50" />
+  <slot />
 </nav>
 
 <style>
+  .burger {
+    margin-left: 1rem;
+  }
   .logo {
     pointer-events: none;
     animation: App-logo-spin infinite 1.6s ease-in-out alternate;

@@ -12,7 +12,7 @@
 
 <div class="container markdown-container">
   {#await fetchMarkdown}
-    Loading markdown ...
+    Loading the markdown from GitHub...
   {:then result}
     <SvelteMarkdown source={result} />
   {:catch error}
@@ -22,6 +22,6 @@
 
 <style>
   .markdown-container {
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
 </style>
