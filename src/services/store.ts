@@ -1,3 +1,3 @@
 import { writable } from 'svelte/store';
 
-export const menuOpen = writable(true);
+export const menuOpen = writable(false);

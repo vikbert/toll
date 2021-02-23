@@ -8,6 +8,8 @@
   import AwesomePython from './components/pages/AwesomePython.svelte';
   import AwesomeSymfony from './components/pages/AwesomeSymfony.svelte';
   import AwesomePhp from './components/pages/AwesomePHP.svelte';
+import RemoteMarkdown from './components/markdown/RemoteMarkdown.svelte';
+import AwesomeSymfonyEducation from './components/pages/AwesomeSymfonyEducation.svelte';
 
   const info: GithubInfo = {
     author: 'vikbert',
@@ -18,6 +20,10 @@
     {
       link: 'symfony',
       title: 'Awesome Symfony',
+    },
+    {
+      link: 'symfony-education',
+      title: 'Awesome Symfony Education',
     },
     {
       link: 'python',
@@ -66,6 +72,7 @@
       <Route path={'symfony'} component={AwesomeSymfony} />
       <Route path={'php'} component={AwesomePhp} />
       <Route path={'python'} component={AwesomePython} />
+      <Route path={'symfony-education'} component={AwesomeSymfonyEducation} />
     </div>
   </main>
 </Router>

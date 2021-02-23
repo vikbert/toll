@@ -14,9 +14,7 @@
 
 <nav class="topbar space-between px-1">
   <div class="burger" class:open on:click={toggleMenu}>
-    <span />
-    <span />
-    <span />
+    <span class="iconify" data-icon="ant-design:menu-outlined" data-inline="false" width="90"></span>
   </div>
   <img src="logo.png" class="logo" alt="logo" width="50" />
   <slot />
@@ -25,6 +23,9 @@
 <style>
   .burger {
     margin-left: 1rem;
+  }
+  .iconify {
+    width: 90;
   }
   .logo {
     pointer-events: none;
