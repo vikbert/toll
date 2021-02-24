@@ -7,6 +7,7 @@
   });
 
   const toggleMenu = () => {
+    console.log('current: ', open);
     open = !open;
     menuOpen.set(open);
   };

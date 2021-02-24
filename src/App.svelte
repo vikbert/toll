@@ -4,7 +4,7 @@
   import Footer from './components/footer/Footer.svelte';
   import GitHub from './components/header/GitHub.svelte';
   import type GithubInfo from './types/GithubInfo';
-  import Topbar from './components/header/Topbar.svelte';
+  import Header from './components/header/Header.svelte';
   import AwesomePython from './components/pages/AwesomePython.svelte';
   import AwesomeSymfony from './components/pages/AwesomeSymfony.svelte';
   import AwesomePhp from './components/pages/AwesomePHP.svelte';
@@ -54,12 +54,19 @@
   const setActiveNav = (name: string) => {
     activeNav = name;
   };
+
+  const handleCloseSidebar = () => {
+    if (open === true) {
+      open = false;
+      menuOpen.set(false);
+    }
+  }
 </script>
 
 <header class="header">
-  <Topbar>
+  <Header>
     <GitHub {info} />
-  </Topbar>
+  </Header>
 </header>
 <Router url="/symfony">
   <nav class="sidebar" class:open>
@@ -77,7 +84,7 @@
     </ul>
   </nav>
   <main class="main">
-    <div class="container">
+    <div class="container" on:click={handleCloseSidebar}>
       <Route path={'symfony'} component={AwesomeSymfony} />
       <Route path={'php'} component={AwesomePhp} />
       <Route path={'python'} component={AwesomePython} />
