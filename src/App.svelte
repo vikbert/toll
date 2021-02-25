@@ -57,7 +57,7 @@
     }
   };
 
-  export let url = '';
+  export let url = 'symfony';
 </script>
 
 <header class="header">
