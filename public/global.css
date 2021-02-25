@@ -7,3 +7,9 @@ h1, h2 {
     font-size: 3rem;
   }
 }
+pre {
+  border: 1px solid #dedede;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 15px;
+}

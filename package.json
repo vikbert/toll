@@ -17,7 +17,7 @@
   },
   "scripts": {
     "dev": "snowpack dev",
-    "start": "sirv public --single --dev",
+    "start": "sirv build --single --dev",
     "build": "snowpack build",
     "test": "web-test-runner \"src/**/*.test.ts\""
   },

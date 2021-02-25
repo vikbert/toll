@@ -5,7 +5,6 @@
   import GitHub from './components/header/GitHub.svelte';
   import type GithubInfo from './types/GithubInfo';
   import Header from './components/header/Header.svelte';
-  import AwesomePython from './components/pages/AwesomePython.svelte';
   import AwesomeSymfony from './components/pages/AwesomeSymfony.svelte';
   import AwesomePhp from './components/pages/AwesomePHP.svelte';
   import AwesomeSymfonyEducation from './components/pages/AwesomeSymfonyEducation.svelte';
@@ -25,10 +24,6 @@
     {
       link: 'symfony-education',
       title: 'Awesome Symfony Education',
-    },
-    {
-      link: 'python',
-      title: 'Awesome Python',
     },
     {
       link: 'php',
@@ -60,7 +55,9 @@
       open = false;
       menuOpen.set(false);
     }
-  }
+  };
+
+  export let url = '';
 </script>
 
 <header class="header">
@@ -68,7 +65,7 @@
     <GitHub {info} />
   </Header>
 </header>
-<Router url="/symfony">
+<Router {url}>
   <nav class="sidebar" class:open>
     <ul>
       {#each items as item}
@@ -87,7 +84,6 @@
     <div class="container" on:click={handleCloseSidebar}>
       <Route path={'symfony'} component={AwesomeSymfony} />
       <Route path={'php'} component={AwesomePhp} />
-      <Route path={'python'} component={AwesomePython} />
       <Route path={'symfony-education'} component={AwesomeSymfonyEducation} />
       <Route path={'react'} component={AwesomeReact} />
       <Route path={'symfony-snippets'} component={AwesomeSymfonySnippets} />
