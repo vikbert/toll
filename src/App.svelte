@@ -10,6 +10,7 @@
   import AwesomeSymfonyEducation from './components/pages/AwesomeSymfonyEducation.svelte';
   import AwesomeReact from './components/pages/AwesomeReact.svelte';
   import AwesomeSymfonySnippets from './components/pages/AwesomeSymfonySnippets.svelte';
+import AwesomeMacApp from './components/pages/AwesomeMacApp.svelte';
 
   const info: GithubInfo = {
     author: 'vikbert',
@@ -36,6 +37,10 @@
     {
       link: 'symfony-snippets',
       title: 'Awesome Symfony Snippets',
+    },
+    {
+      link: 'mac-app',
+      title: 'Awesome Mac App',
     },
   ];
 
@@ -87,6 +92,7 @@
       <Route path={'symfony-education'} component={AwesomeSymfonyEducation} />
       <Route path={'react'} component={AwesomeReact} />
       <Route path={'symfony-snippets'} component={AwesomeSymfonySnippets} />
+      <Route path={'mac-app'} component={AwesomeMacApp} />
     </div>
   </main>
 </Router>
