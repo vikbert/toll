@@ -13,6 +13,7 @@
   import AwesomeMacApp from './components/pages/AwesomeMacApp.svelte';
   import AwesomeList from './components/home/AwesomeList.svelte';
   import {pageItems} from './services/store';
+import Hero from './components/header/Hero.svelte';
 
   const info: GithubInfo = {
     author: 'vikbert',
@@ -66,6 +67,7 @@
     </ul>
   </nav>
   <main class="main">
+    <Hero/>
     <div class="container" on:click={handleCloseSidebar}>
       <Route path={''} component={AwesomeList} />
       <Route path={'symfony'} component={AwesomeSymfony} />
