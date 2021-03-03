@@ -1,4 +1,5 @@
-type awesomeItem = {
-  link: string,
+type ItemType = {
+  path: string,
   title: string,
+  info: string,
 }

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { Router, link } from 'svelte-routing';
   import { menuOpen } from '../../services/store';
   let open: boolean = false;
 
@@ -15,9 +16,18 @@
 
 <nav class="topbar space-between px-1">
   <div class="burger" class:open on:click={toggleMenu}>
-    <span class="iconify" data-icon="ant-design:menu-outlined" data-inline="false" width="90"></span>
+    <span
+      class="iconify"
+      data-icon="ant-design:menu-outlined"
+      data-inline="false"
+      width="90"
+    />
   </div>
-  <img src="logo.png" class="logo" alt="logo" width="50" />
+  <Router>
+    <a href="/" use:link>
+      <img src="logo.png" class="logo" alt="logo" width="50" />
+    </a>
+  </Router>
   <slot />
 </nav>
 

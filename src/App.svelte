@@ -10,39 +10,19 @@
   import AwesomeSymfonyEducation from './components/pages/AwesomeSymfonyEducation.svelte';
   import AwesomeReact from './components/pages/AwesomeReact.svelte';
   import AwesomeSymfonySnippets from './components/pages/AwesomeSymfonySnippets.svelte';
-import AwesomeMacApp from './components/pages/AwesomeMacApp.svelte';
+  import AwesomeMacApp from './components/pages/AwesomeMacApp.svelte';
+  import AwesomeList from './components/home/AwesomeList.svelte';
+  import {pageItems} from './services/store';
 
   const info: GithubInfo = {
     author: 'vikbert',
     project: 'toll',
   };
 
-  const items: awesomeItem[] = [
-    {
-      link: 'symfony',
-      title: 'Awesome Symfony',
-    },
-    {
-      link: 'symfony-education',
-      title: 'Awesome Symfony Education',
-    },
-    {
-      link: 'php',
-      title: 'Awesome PHP',
-    },
-    {
-      link: 'react',
-      title: 'Awesome React',
-    },
-    {
-      link: 'symfony-snippets',
-      title: 'Awesome Symfony Snippets',
-    },
-    {
-      link: 'mac-app',
-      title: 'Awesome Mac App',
-    },
-  ];
+  let items: ItemType[] = [];
+  pageItems.subscribe(value => {
+    items = value;
+  });
 
   let open: boolean = true;
   let activeNav: string = 'symfony';
@@ -62,7 +42,7 @@ import AwesomeMacApp from './components/pages/AwesomeMacApp.svelte';
     }
   };
 
-  export let url = 'symfony';
+  export let url = '';
 </script>
 
 <header class="header">
@@ -74,12 +54,12 @@ import AwesomeMacApp from './components/pages/AwesomeMacApp.svelte';
   <nav class="sidebar" class:open>
     <ul>
       {#each items as item}
-        <Link to={item.link}>
+        <Link to={item.path}>
           <li
-            class:active={activeNav === item.link}
-            on:click={() => setActiveNav(item.link)}
+            class:active={activeNav === item.path}
+            on:click={() => setActiveNav(item.path)}
           >
-            {item.title}
+            {item.path}
           </li>
         </Link>
       {/each}
@@ -87,6 +67,7 @@ import AwesomeMacApp from './components/pages/AwesomeMacApp.svelte';
   </nav>
   <main class="main">
     <div class="container" on:click={handleCloseSidebar}>
+      <Route path={''} component={AwesomeList} />
       <Route path={'symfony'} component={AwesomeSymfony} />
       <Route path={'php'} component={AwesomePhp} />
       <Route path={'symfony-education'} component={AwesomeSymfonyEducation} />
