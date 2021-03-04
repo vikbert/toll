@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import AwesomeItem from './AwesomeItem.svelte';
   import { pageItems } from '../../services/store';
 

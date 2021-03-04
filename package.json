@@ -16,32 +16,33 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "snowpack dev",
-    "start": "sirv build --single --dev",
-    "build": "snowpack build",
-    "test": "web-test-runner \"src/**/*.test.ts\""
-  },
-  "dependencies": {
-    "sirv": "^1.0.11",
-    "sirv-cli": "^1.0.11",
-    "svelte": "^3.24.0"
+    "validate": "svelte-check && tsc --noEmit",
+    "dev": "svite -ts",
+    "build": "svite build -ts"
   },
   "devDependencies": {
-    "@snowpack/plugin-dotenv": "^2.0.5",
-    "@snowpack/plugin-svelte": "^3.5.0",
-    "@snowpack/plugin-typescript": "^1.2.0",
-    "@snowpack/web-test-runner-plugin": "^0.2.0",
-    "@testing-library/svelte": "^3.0.0",
-    "@types/chai": "^4.2.13",
-    "@types/mocha": "^8.2.0",
-    "@types/snowpack-env": "^2.3.2",
-    "@web/test-runner": "^0.12.0",
-    "chai": "^4.2.0",
-    "snowpack": "^3.0.1",
-    "svelte-ace": "^1.0.13",
+    "@tsconfig/svelte": "^1.0.10",
+    "typescript": "^4.0.2",
+    "cross-env": "^7.0.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.1.1",
+    "prettier-plugin-svelte": "^1.2.1",
+    "sirv-cli": "^1.0.6",
+    "svelte": "^3.24.1",
+    "vite": "^1.0.0-rc.4",
+    "vite-plugin-svelte": "^2.4.1",
     "svelte-markdown": "0.0.4",
-    "svelte-preprocess": "^4.0.8",
     "svelte-routing": "^1.5.0",
-    "typescript": "^4.0.0"
+    "date-fns": "^2.16.1",
+    "postcss": "^7.0.32",
+    "postcss-import": "^12.0.1",
+    "postcss-load-config": "^2.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "svelte-check": "^1.0.39",
+    "svelte-inline-svg": "^1.0.0",
+    "svelte-preprocess": "4.2.1",
+    "svite": "^0.6.1",
+    "tailwindcss": "^1.8.6",
+    "tslib": "^2.0.1"
   }
 }
