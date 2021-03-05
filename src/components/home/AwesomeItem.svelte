@@ -1,8 +1,10 @@
 <script lang="ts">
   import {Router, link} from 'svelte-routing'
+import Icon from './Icon.svelte';
   export let title: string;
   export let info: string;
   export let path: string;
+  export let icon: string;
 </script>
 
 <div class="card shadow-lg">
@@ -14,7 +16,14 @@
       </a>
     </Router>
     </div>
-    <p class="info">{info}</p>
+   <div class="row">
+     <div class="column column-75">
+       <p class="info">{info}</p>
+      </div>
+     <div class="column column-25 text-centered">
+       <Icon name={icon} />
+      </div>
+   </div>
   </div>
 </div>
 
