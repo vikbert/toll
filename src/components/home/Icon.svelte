@@ -109,6 +109,10 @@
         iconHtml =
           '<span class="iconify" data-icon="la:github" data-inline="false" '+'width=' + iconWidth + '></span>';
         break;
+      case 'stack':
+        iconHtml =
+          '<span class="iconify" data-icon="ph:stack-light" data-inline="false" '+'width=' + iconWidth + '></span>';
+        break;
       case 'default':
         iconHtml =
           '<span class="iconify" data-icon="ant-design:code-sandbox-outlined" data-inline="false" '+'width=' + iconWidth + '></span>';

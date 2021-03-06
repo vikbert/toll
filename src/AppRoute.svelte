@@ -74,6 +74,14 @@
       icon: 'github',
       component: AwesomeGitHub,
     },
+    'minimalist-framework': {
+      path: 'minimalist-framework',
+      title: 'Awesome Minimal Framework',
+      info:
+        'A curated list of awesome resources, pointers, and tips related to minimalist frameworks (simple and lightweight) Everything in alphabetical order',
+      icon: 'stack',
+      component: AwesomeMinimalistFramework,
+    },
   };
 </script>
 
@@ -90,6 +98,7 @@
   import AwesomeReactHook from './components/pages/AwesomeReactHook.svelte';
   import AwesomeDevOps from './components/pages/AwesomeDevOps.svelte';
   import AwesomeGitHub from './components/pages/AwesomeGitHub.svelte';
+  import AwesomeMinimalistFramework from './components/pages/AwesomeMinimalistFramework.svelte';
 
 
   pageItems.subscribe((value) => {
