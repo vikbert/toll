@@ -3,4 +3,5 @@ type ItemType = {
   title: string,
   info: string,
   icon: string,
+  component: any,
 }

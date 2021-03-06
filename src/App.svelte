@@ -5,25 +5,13 @@
   import GitHub from './components/header/GitHub.svelte';
   import type GithubInfo from './types/GithubInfo';
   import Header from './components/header/Header.svelte';
-  import AwesomeSymfony from './components/pages/AwesomeSymfony.svelte';
-  import AwesomePhp from './components/pages/AwesomePHP.svelte';
-  import AwesomeSymfonyEducation from './components/pages/AwesomeSymfonyEducation.svelte';
-  import AwesomeReact from './components/pages/AwesomeReact.svelte';
-  import AwesomeSymfonySnippets from './components/pages/AwesomeSymfonySnippets.svelte';
-  import AwesomeMacApp from './components/pages/AwesomeMacApp.svelte';
-  import AwesomeList from './components/home/AwesomeList.svelte';
-  import {pageItems} from './services/store';
-import Hero from './components/header/Hero.svelte';
+  import Hero from './components/header/Hero.svelte';
+  import AppRoute, { componentConfig } from './AppRoute.svelte';
 
   const info: GithubInfo = {
     author: 'vikbert',
     project: 'toll',
   };
-
-  let items: ItemType[] = [];
-  pageItems.subscribe(value => {
-    items = value;
-  });
 
   let open: boolean = true;
   let activeNav: string = 'symfony';
@@ -54,7 +42,7 @@ import Hero from './components/header/Hero.svelte';
 <Router {url}>
   <nav class="sidebar" class:open>
     <ul>
-      {#each items as item}
+      {#each Object.values(componentConfig) as item}
         <Link to={item.path}>
           <li
             class:active={activeNav === item.path}
@@ -67,16 +55,8 @@ import Hero from './components/header/Hero.svelte';
     </ul>
   </nav>
   <main class="main">
-    <Hero/>
-    <div class="container" on:click={handleCloseSidebar}>
-      <Route path={''} component={AwesomeList} />
-      <Route path={'symfony'} component={AwesomeSymfony} />
-      <Route path={'php'} component={AwesomePhp} />
-      <Route path={'symfony-education'} component={AwesomeSymfonyEducation} />
-      <Route path={'react'} component={AwesomeReact} />
-      <Route path={'symfony-snippets'} component={AwesomeSymfonySnippets} />
-      <Route path={'mac-app'} component={AwesomeMacApp} />
-    </div>
+    <Hero />
+    <AppRoute />
   </main>
 </Router>
 <Footer {info} />

@@ -1,27 +1,24 @@
 <script lang="ts">
   import { Router, link } from 'svelte-routing';
   import Icon from './Icon.svelte';
-  export let title: string;
-  export let info: string;
-  export let path: string;
-  export let icon: string;
+  export let itemData: ItemType;
 </script>
 
 <div class="card shadow-lg">
   <div class="content">
     <div class="headline">
       <Router>
-        <a href={path} use:link>
-          <h4>{title}</h4>
+        <a href={itemData.path} use:link>
+          <h4>{itemData.title}</h4>
         </a>
       </Router>
     </div>
     <div class="row">
       <div class="column column-75">
-        <p class="info">{info}</p>
+        <p class="info">{itemData.info}</p>
       </div>
       <div class="column column-25 text-centered">
-        <Icon name={icon} />
+        <Icon name={itemData.icon} />
       </div>
     </div>
   </div>

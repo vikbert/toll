@@ -1,19 +1,15 @@
 <script>
   import AwesomeItem from './AwesomeItem.svelte';
-  import { pageItems } from '../../services/store';
-
-  let projects: ItemType[] = [];
-  pageItems.subscribe((value) => {
-    projects = value;
-  });
+  import {componentConfig} from '../../AppRoute.svelte'
+  export const location = null;
 </script>
 
 <div class="container">
   <div class="centered-xy my-2" />
   <div class="items">
-    {#each projects as projectData}
+    {#each Object.values(componentConfig) as projectData}
       <div class="item">
-        <AwesomeItem {...projectData} />
+        <AwesomeItem itemData={projectData} />
       </div>
     {/each}
   </div>

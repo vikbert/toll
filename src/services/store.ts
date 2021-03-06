@@ -38,4 +38,10 @@ export const pageItems = writable([
     info: 'List of awesome open source applications for macOS. This list contains a lot of native, and cross-platform apps. The main goal of this repository is to find free open source apps and start contributing. Feel free to contribute to the list, any suggestions are welcome!',
     icon: 'macos',
   },
+  {
+    path: 'react-hook',
+    title: 'Awesome React Hook',
+    info: 'List of awesome open source React Hooks and Hoos resources, tutorials and more!',
+    icon: 'react',
+  },
 ]);

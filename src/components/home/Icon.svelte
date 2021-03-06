@@ -10,6 +10,10 @@
         iconHtml =
           '<span class="iconify" data-icon="ri:reactjs-line" data-inline="false" '+'width=' + iconWidth + '></span>';
         break;
+      case 'hook':
+        iconHtml =
+          '<span= class="iconify" data-icon="mdi:webhook" data-inline="false" '+'width=' + iconWidth + '></span>';
+        break;
       case 'redux':
         iconHtml =
           '<span class="iconify" data-icon="cib:redux" data-inline="false" '+'width=' + iconWidth + '></span>';
@@ -96,6 +100,14 @@
       case 'rollup':
         iconHtml =
           '<span class="iconify" data-icon="mdi:rollupjs" data-inline="false" '+'width=' + iconWidth + '></span>';
+        break;
+      case 'devops':
+        iconHtml =
+          '<span class="iconify" data-icon="simple-icons:azuredevops" data-inline="false" '+'width=' + iconWidth + '></span>';
+        break;
+      case 'github':
+        iconHtml =
+          '<span class="iconify" data-icon="la:github" data-inline="false" '+'width=' + iconWidth + '></span>';
         break;
       case 'default':
         iconHtml =
