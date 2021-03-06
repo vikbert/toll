@@ -2,7 +2,7 @@
   <img src="./docs/toll.png" width="480px" alt="toll logo" />
   <h3>Toll</h3>
   <p>A collection of the Awesome collection found in GitHub</p>
-  <p>parser</p>
+  <p>powered by svelte and svelte markdown parser</p>
 
   <p>
     <a href="#">
@@ -22,9 +22,9 @@ npm install
 ```
 
 
-## start
+## dev
 ```bash
-npm run start 
+npm run dev 
 ```
 
 ## build
