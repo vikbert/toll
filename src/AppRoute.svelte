@@ -9,7 +9,7 @@
       info:
         'A list of awesome Symfony bundles, utilities and resources collected by the community',
       icon: 'symfony',
-      component: AwesomeSymfonySnippets,
+      component: AwesomeSymfony,
     },
     php: {
       path: 'php',
@@ -82,6 +82,14 @@
       icon: 'stack',
       component: AwesomeMinimalistFramework,
     },
+    'database-tool': {
+      path: 'database-tool',
+      title: 'Awesome Database Tool',
+      info:
+        'Here we will collect information about awesome useful and awesome experimental tools that simplify working with databases for DBA, DevOps, Developers and mere mortals.',
+      icon: 'database',
+      component: AwesomeDatabase,
+    },
   };
 </script>
 
@@ -98,6 +106,7 @@
   import AwesomeReactHook from './components/pages/AwesomeReactHook.svelte';
   import AwesomeDevOps from './components/pages/AwesomeDevOps.svelte';
   import AwesomeGitHub from './components/pages/AwesomeGitHub.svelte';
+  import AwesomeDatabase from './components/pages/AwesomeDatabase.svelte';
   import AwesomeMinimalistFramework from './components/pages/AwesomeMinimalistFramework.svelte';
 
 

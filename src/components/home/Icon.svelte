@@ -113,6 +113,10 @@
         iconHtml =
           '<span class="iconify" data-icon="ph:stack-light" data-inline="false" '+'width=' + iconWidth + '></span>';
         break;
+      case 'database':
+        iconHtml =
+          '<span class="iconify" data-icon="feather:database" data-inline="false" '+'width=' + iconWidth + '></span>';
+        break;
       case 'default':
         iconHtml =
           '<span class="iconify" data-icon="ant-design:code-sandbox-outlined" data-inline="false" '+'width=' + iconWidth + '></span>';
