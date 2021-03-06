@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./docs/toll.jpg" width="480px" alt="aino" />
+  <img src="./docs/toll.png" width="480px" alt="toll logo" />
   <h3>Toll</h3>
   <p>A collection of the Awesome collection found in GitHub</p>
   <p>parser</p>
