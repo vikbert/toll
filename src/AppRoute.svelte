@@ -89,7 +89,7 @@
   import AwesomeMacApp from './components/pages/AwesomeMacApp.svelte';
   import AwesomeReactHook from './components/pages/AwesomeReactHook.svelte';
   import AwesomeDevOps from './components/pages/AwesomeDevOps.svelte';
-import AwesomeGitHub from './components/pages/AwesomeGitHub.svelte';
+  import AwesomeGitHub from './components/pages/AwesomeGitHub.svelte';
 
 
   pageItems.subscribe((value) => {

@@ -11,9 +11,6 @@
     <a href="#">
       <img src="https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square" alt="MIT License">
     </a>
-    <a href="#">
-      <img src="https://img.shields.io/bundlephobia/minzip/pixss?style=flat-square" alt="MIT License">
-    </a>
   </p>
 </div>
 

@@ -48,7 +48,7 @@
             class:active={activeNav === item.path}
             on:click={() => setActiveNav(item.path)}
           >
-            {item.path}
+            {item.title}
           </li>
         </Link>
       {/each}
