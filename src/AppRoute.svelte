@@ -90,6 +90,14 @@
       icon: 'database',
       component: AwesomeDatabase,
     },
+    'ddd': {
+      path: 'ddd',
+      title: 'Awesome DDD',
+      info:
+        'Here we will collect information about awesome useful and awesome experimental tools that simplify working with databases for DBA, DevOps, Developers and mere mortals.',
+      icon: 'architecture',
+      component: AwesomeDDD,
+    },
   };
 </script>
 
@@ -108,7 +116,7 @@
   import AwesomeGitHub from './components/pages/AwesomeGitHub.svelte';
   import AwesomeDatabase from './components/pages/AwesomeDatabase.svelte';
   import AwesomeMinimalistFramework from './components/pages/AwesomeMinimalistFramework.svelte';
-
+  import AwesomeDDD from './components/pages/AwesomeDDD.svelte';
 
   pageItems.subscribe((value) => {
     const items = value;
